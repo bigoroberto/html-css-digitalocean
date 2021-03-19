@@ -1,0 +1,115 @@
+/* GLOBAL */
+.wrapper-80{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.line-height{
+  line-height: 40px;
+}
+
+.padding-60{
+  padding: 60px 0;
+}
+
+.padding-30{
+  padding: 30px 0;
+}
+
+.margin-dx-2{
+  margin-right: 2%;
+}
+/* /GLOBAL */
+
+/* BACKGROUND PROVA */
+.prova-black{
+  background-color: #030303;
+  height: 40px;
+}
+
+.prova-red{
+  background-color: red;
+}
+
+.prova-green{
+  background-color: green;
+}
+
+.prova-rosybrown{
+  background-color: rosybrown;
+}
+
+.text-white{
+  color: #fff;
+}
+/* /BACKGROUND HEADER */
+
+/* HEADER-NAV */
+header .wrapper-80{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* /HEADER-NAV */
+
+/* MAIN*/
+/* SEZIONE 1 di 8*/
+.prova-bg-blu{
+  height: 500px;
+  background-color: blue;
+}
+
+.box-sx-section1{
+  background-color: white;
+  height: 250px;
+}
+
+.box-dx-section1{
+  background-color: lightgray;
+  height: 300px;
+}
+/* /SEZIONE 1 di 8 */
+
+/* SEZIONE 2 di 8 */
+.rb-bg-grey{
+  background-color:#F3F5F9;
+}
+/* /SEZIONE 2 di 8 */
+
+/* SEZIONE 3 di 8 */
+#sezione-3 li{
+  list-style: none;
+  border-left: 1px solid red;
+  padding-left: 15px;
+  line-height: 40px;
+}
+/* /SEZIONE 3 di 8 */
+
+/* SEZIONE 6 di 8 */
+.bg-sfumato{
+  height: 500px;
+  background-image: linear-gradient(#0047C5, #001E9A)
+}
+/* /SEZIONE 6 di 8 */
+
+/* SEZIONE 8 di 8 */
+
+/* SEZIONE 8 di 8 */
+.rb-btn-defaul{
+  font-size: larger;
+  color: blue;
+  margin-top: 15px;
+}
+/* /SEZIONE 8 di 8 */
+
+/* FOOTER */
+.rb-bg-footer{
+  background-color: #031C4E;
+}
+
+footer li{
+  text-align: left;
+  list-style: none;
+  color: lightgray;
