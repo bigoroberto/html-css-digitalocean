@@ -9,9 +9,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 
+  <!-- font-family -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css">
   <title>DigitalOcean</title>
@@ -21,13 +25,29 @@
 
   <!-- HEADER NAV -->
   <header>
-    <div class="wrapper-80 prova-black">
-      <div class="container text-white line-height">
+    <div class="rb-nav">
+      <div class="container line-height">
         <div class="row ">
-          <div class="col-lg-3 prova-red">111111</div> <!-- INSERIRE LOGO -->
-          <div class="col-lg-5 text-center prova-green">22222222</div>
-          <div class="col-lg-4 text-right prova-rosybrown">33333</div>
-          <!-- col lg 5 ed lg 4 sono visible solo quando sono lg, poi diventano hidden e compare il menu hambuerger da md fino ad xs -->
+          <div class="col-xs-6 col-lg-3"><img src="assets/img/logo.png" alt=""></div>
+          <div class="col-lg-5 visible-lg text-center">
+            <ul>
+              <li class="margin-dx-5">Products <i class="fas fa-angle-down"></i></li>
+              <li class="margin-dx-5">Customers</li>
+              <li class="margin-dx-5">Community <i class="fas fa-angle-down"></i></li>
+              <li>Pricing</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 visible-lg text-right">
+            <ul>
+              <li>Docs</li>
+              <li class="margin-sx-5 padding-dx-2">Support <span><i class="fas fa-angle-down"></i></span> </li>
+              <li class="margin-sx-5">Login</li>
+              <li><button class="btn btn-default rb-btn-default margin-sx-5">Sign up</button></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 hidden-lg text-right">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </div>
         </div>
       </div>
     </div>
@@ -36,15 +56,25 @@
 
   <!-- MAIN -->
   <!-- SECTION 1 di 8-->
-  <section id="sezioe-1">
-    <div class="wrapper-80 prova-bg-blu">
-      <!-- mettere il background al wrapper 80 -->
-      <div class="container">
-        <div class="row padding-60">
-          <div class="col-lg-7 box-sx-section1">adasasasdasdas</div>
-          <!-- INSERIRE TESTO E PARAGRAFO. forse dare del padding right, controllare bene quando si inserisce poi il testo -->
-          <div class="col-lg-5 box-dx-section1">asdasdasdasdas</div> <!-- INSERIRE INPUT DA BOOTSTRAP -->
+  <section id="sezione-1">
+    <div class="container">
+      <div class="row padding-60">
+        <div class="col-xs-12 col-lg-7 box-sx-section1">
+          <h1 class="text-white">The simplest cloud platform for developers & teams</h1>
+          <p>Deploy, manafe, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing
+            infrastucture easy for teams and businesses, wheter you're running one virtual machine or ten thousand. </p>
         </div>
+        <div class="col-xs-12 col-lg-5 box-dx-section1 line-height text-center"><h2>Deploy your app in seconds. <br> <span>Get started now.</span></h2>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-default rb-btn-default"> <b>Sing up with google</b></button>
+        </div> 
+        
       </div>
     </div>
   </section>
@@ -52,48 +82,77 @@
 
   <!-- SECTION 2 di 8 -->
   <!-- SISTEMARE BENE GRANDEZZA DELLE IMMAGINI -->
-  <section id="sezioe-2">
-    <div class="wrapper-80 rb-bg-grey">
-      <!-- mettere il background al wrapper 80 -->
-      <div class="container text-center">
-        <div class="row padding-30">
-          <div class="col-lg-12">
-            <h5>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h5>
-          </div>
-          <div class="col-lg-2"><img src="assets/img/docker.svg" alt=""></div>
-          <div class="col-lg-2"><img src="assets/img/gitlab.svg" alt=""></div>
-          <div class="col-lg-2"><img src="assets/img/slack.svg" alt=""></div>
-          <div class="col-lg-2"><img src="assets/img/hashicorp.svg" alt=""></div>
-          <div class="col-lg-2"><img src="assets/img/wework.svg" alt=""></div>
-          <div class="col-lg-2"><img src="assets/img/splunk.svg" alt=""></div>
-          <div class="col-lg-12"><a href="">View customer stories ></a></div>
+  <section id="sezione-2" class=" text-center rb-bg-grey">
+    <div class="container padding-30">
+      <div class="row ">
+        <div class="col-lg-12">
+          <h5>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h5>
         </div>
+        <div class="row ">
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/docker.svg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/gitlab.svg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/slack.svg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/hashicorp.svg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/wework.svg" alt="">
+          </div>
+          <div class="col-xs-6 col-sm-2 padding-30">
+            <img src="assets/img/splunk.svg" alt="">
+          </div>
+
+        </div>
+
       </div>
+      <div class="col-lg-12"><a href="">View customer stories ></a></div>
     </div>
+
+
   </section>
   <!-- /SECTION 2 di 8 -->
 
   <!-- SECTION 3 di 8 -->
   <section id="sezione-3">
-    <div class="wrapper-80 prova-red">
-      <div class="container">
-        <div class="row ">
-          <div class="col-lg-12 text-center media-middle prova-green">
-            <h3>Deploy and ascale seamlessly</h3>
-            <p>Our optimized configuration process saves your team time when running and scaling distributed
-              application, Al & machine learning workloads, hosted service, client websites, or CI/CD environments. </p>
-          </div>
-          <div class="col-lg-4 prova-rosybrown">
-            <ul>
-              <li>Deploy</li>
-              <li>Manage</li>
-              <li>Secure</li>
-              <li>Scale</li>
-              <li>Monitor</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 prova-green">1</div>
-          <div class="col-lg-4 prova-rosybrown">2</div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-xs-12 text-center media-middle">
+          <h3>Deploy and ascale seamlessly</h3>
+          <p>Our optimized configuration process saves your team time when running and scaling distributed
+            application, Al & machine learning workloads, hosted service, client websites, or CI/CD environments. </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 rb-height-200">
+          <ul class="line-height">
+            <li>Deploy</li>
+            <li>Manage</li>
+            <li>Secure</li>
+            <li>Scale</li>
+            <li>Monitor</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 rb-height-150"><img src="assets/img/cluster-deploy.svg" alt="">
+          <h5>Cluster deployments</h5>
+          <p> Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly
+            against our API. </p>
+        </div>
+        <div class="col-xs-12 col-sm-4 rb-height-150"><img src="assets/img/optimized-compute.svg" alt="">
+          <h5>Optimized compute typer</h5>
+          <p>Get the compute resources you need with Standard or Optimized Droplets</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 rb-height-150"><img src="assets/img/one-click.svg" alt="">
+          <h5>One-click apps</h5>
+          <p>Skip the install and configuration process with pre-built open source images supporting Rails,
+            Cassandra, Docker, and more.</p>
+        </div>
+        <div class="col-xs-12 col-sm-4 rb-height-150"><img src="assets/img/global.svg" alt="">
+          <h5>Global availability</h5>
+          <p>Deployto any of our data center regions around the world.</p>
         </div>
       </div>
     </div>
@@ -101,43 +160,49 @@
   <!-- /SECTION 3 di 8 -->
 
   <!-- SECTION 4 di 8 -->
-  <section id="sezioe-4">
-    <div class="wrapper-80 rb-bg-grey">
-      <!-- mettere il background al wrapper 80 -->
-      <div class="container text-center">
-        <div class="row padding-30">
-          <div class="col-lg-12">
-            <h3>Designed for developers</h3>
-            <p>Build more and spend less time managing your infrastucture with our easy-to-use control panel and API.
-            </p>
-          </div>
-          <div class="col-lg-12"><img src="assets/img/slide.jpg" alt=""></div>
-          <div class="col-lg-12">
-            <h6>Create compute serves in 55 seconds or less</h6>
-          </div>
-        </div>
-      </div>
+    <section id="sezione-4" class="rb-bg-grey">
+    <div class="container">
+   <div class="row padding-30">
+    <div class="col-xs-12  text-center">
+      <h3>Designed for developers</h3>
+      <p>Build more and spend less time managing your infrastucture with our easy-to-use control panel and API.
+      </p>
     </div>
+    <div class="col-xs-offset-1 col-xs-8"><img src="assets/img/slide.jpg" alt=""></div>
+    <div class="col-xs-12  text-center">
+      <h6>Create compute serves in 55 seconds or less</h6>
+    </div>
+  </div>
+  <!--     </div> -->
   </section>
   <!-- /SECTION 4 di 8 -->
 
   <!-- SECTION 5 di 8 -->
-  <section id="sezioe-5">
-    <div class="wrapper-80 prova-red">
-      <div class="container">
-        <div class="row padding-60">
-          <div class="col-lg-12 text-center prova-green">
-            <h3>The fratures you business needs</h3>
-          </div>
-          <div class="col-lg-4 prova-rosybrown"><h4>Predictable pricing</h4>
-          <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-learning pricing structure.</p>
-        <a href="#">Pricing ></a></div>
-          <div class="col-lg-4 prova-green"><h4>World-class service</h4>
+  <section id="sezione-5">
+    <div class="container">
+      <div class="row padding-60">
+        <div class="col-xs-12 text-center">
+          <h3>The fratures you business needs</h3>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/pred-pricing.svg" alt="">
+          <h4>Predictable pricing</h4>
+          <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat,
+            industry-learning pricing structure.</p>
+          <a href="#">Pricing ></a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/world-class.svg" alt="">
+          <h4>World-class service</h4>
           <p>Free round-the-clock technical support for alla customers. Your'll fell the love.</p>
-        <a href="#">Support ></a></div>
-          <div class="col-lg-4 prova-rosybrown"><h4>Reliable platform</h4>
-          <p>More than 100,000 developer teams worlwide trust DigitalOcean to support their business  with a 99.99%  uptime SLA for all services.</p>
-        <a href="#">Security ></a></div>
+          <a href="#">Support ></a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <img src="assets/img/reliable-platform.svg" alt="">
+          <h4>Reliable platform</h4>
+          <p>More than 100,000 developer teams worlwide trust DigitalOcean to support their business with a 99.99%
+            uptime SLA for all services.</p>
+          <a href="#">Security ></a>
         </div>
       </div>
     </div>
@@ -145,42 +210,103 @@
   <!-- /SECTION 5 di 8 -->
 
   <!-- SECTION 6 di 8 -->
-  <section id="sezione-6">
-    <div class="wrapper-80 bg-sfumato">
-      <div class="container">
-        <div class="row padding-60">
-          <div class="col-lg-12 text-center text-white"><h2>Service your customers around the world from 12 regions</h2></div>
-          <div class="col-lg-6"></div>
-          <div class="col-lg-6"></div>
+  <section id="sezione-6" class="bg-sfumato">
+    <div class="container">
+      <div class="row padding-60">
+        <div class="col-lg-12 text-center text-white">
+          <h2>Service your customers around the world from 12 regions</h2>
         </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-xs-3">AMS2</div>
+            <div class="col-xs-6">Amsterdam, Netherlands</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">AMS3</div>
+            <div class="col-xs-6">Amsterdam, Netherlands</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">BLR1</div>
+            <div class="col-xs-6">Bangalore, India</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">FRA1</div>
+            <div class="col-xs-6">Frankfurt, German</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">LON1</div>
+            <div class="col-xs-6">London, UK</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">NWC1</div>
+            <div class="col-xs-6">New York, USA</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-xs-3">AMS2</div>
+            <div class="col-xs-6">Amsterdam, Netherlands</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">AMS3</div>
+            <div class="col-xs-6">Amsterdam, Netherlands</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">BLR1</div>
+            <div class="col-xs-6">Bangalore, India</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">FRA1</div>
+            <div class="col-xs-6">Frankfurt, German</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">LON1</div>
+            <div class="col-xs-6">London, UK</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">NWC1</div>
+            <div class="col-xs-6">New York, USA</div>
+            <div class="col-xs-3">Test speed > </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
   <!-- /SECTION 6 di 8 -->
 
   <!-- SECTION 7 di 8 -->
-  <section id="sezione-7">
-    <div class="wrapper-80 rb-bg-grey">
-      <div class="container text-center">
-        <div class="row padding-30">
-          <div class="col-lg-12">
-            <h3>Development teams love DigitalOcean</h3>
-          </div>
-          <div class="col-lg-12"><img src="assets/img/slide.jpg" alt=""></div>
+    <section id="sezione-7" class=" text-center rb-bg-grey">
+    <div class="container">
+      <div class="row padding-30">
+        <div class="col-lg-12">
+          <h3>Development teams love DigitalOcean</h3>
         </div>
+  <!--       <div class="col-lg-12"><img src="assets/img/slide.jpg" alt=""></div> -->
       </div>
     </div>
   </section>
   <!-- /SECTION 7 di 8 -->
 
-  <!-- SECTION 7 di 8 -->
-  <section id="sezione-8">
-    <div class="wrapper-80 bg-sfumato">
-      <div class="container">
-        <div class="row padding-60 text-center">
-          <div class="col-lg-12 text-white"><h2>Get started now.</h2></div>
-          <div class="col-lg-12"><button class="btn btn-default rb-btn-defaul">Create your account</button></div>
+  <!-- SECTION 8 di 8 -->
+  <section id="sezione-8" class="bg-sfumato">
+    <div class="container">
+      <div class="row padding-60 text-center">
+        <div class="col-lg-12 text-white">
+          <h2 class="margin-bottom-15">Get started now.</h2>
         </div>
+        <div class="col-lg-12"><button class="btn btn-default rb-btn-default">Create your account</button></div>
       </div>
     </div>
   </section>
@@ -188,39 +314,45 @@
   <!-- /MAIN -->
 
   <!-- FOOTER -->
-  <footer>
-    <div class="wrapper-80 rb-bg-footer">
-      <div class="container text-center">
-        <div class="row padding-30">
-          <div class="col-lg-4 text-left"><img src="assets/img/logo-small.svg" alt="">
+  <footer class="rb-bg-footer">
+    <div class="container text-center">
+      <div class="row padding-30">
+        <div class="col-xs-12 col-lg-4 text-left"><img src="assets/img/logo-small.svg" alt="">
           <h6>&copy; 2018 DigitalOcean, LLC. All rights reserved.</h6>
           <h6>Proudly made in NY</h6>
           <span>
-            <i class="fab fa-twitter margin-dx-2"></i>
-            <i class="fab fa-facebook-square margin-dx-2 "></i>
-            <i class="fab fa-instagram margin-dx-2"></i>
-            <i class="fab fa-youtube margin-dx-2"></i>
-            <i class="fab fa-linkedin margin-dx-2"></i>
+            <a href="#"><i class="fab fa-twitter margin-dx-2"></i></a>
+            <a href="#"><i class="fab fa-facebook-square margin-dx-2 "></i></a>
+            <a href="#"><i class="fab fa-instagram margin-dx-2"></i></a>
+            <a href="#"><i class="fab fa-youtube margin-dx-2"></i></a>
+            <a href="#"><i class="fab fa-linkedin margin-dx-2"></i></a>
+
+
+
           </span>
         </div>
-          <div class="col-lg-2">
-            <ul>
-              <li><h5>Company</h5></li>
-              <li>About</li>
-              <li>Leadership</li>
-              <li>Link</li>
-              <li>Blog</li>
-              <li>Careers</li>
-              <li>Partner Network</li>
-              <li>Referral Program</li>
-              <li>Events</li>
-              <li>Press</li>
-              <li>Legal & Security</li>
+        <div class="col-xs-12 col-sm-6 col-lg-2">
+          <ul>
+            <li>
+              <h5>Company</h5>
+            </li>
+            <li>About</li>
+            <li>Leadership</li>
+            <li>Link</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Partner Network</li>
+            <li>Referral Program</li>
+            <li>Events</li>
+            <li>Press</li>
+            <li>Legal & Security</li>
           </ul>
         </div>
-        <div class="col-lg-2">
+        <div class="col-xs-12 col-sm-6 col-lg-2">
           <ul>
-            <li><h5>Products</h5></li>
+            <li>
+              <h5>Products</h5>
+            </li>
             <li>Droplets</li>
             <li>Spaces</li>
             <li>Kubernetes</li>
@@ -232,60 +364,38 @@
             <li>Pricing</li>
             <li>Documentation</li>
             <li>Release Notes</li>
-        </ul>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-2">
+          <ul>
+            <li>
+              <h5>Community</h5>
+            </li>
+            <li>Tutotials</li>
+            <li>Meetups</li>
+            <li>Q&A</li>
+            <li>Write for Donations</li>
+            <li>Droplets for Demos</li>
+            <li>Hatch</li>
+            <li>Shop Swag</li>
+            <li>Research Program</li>
+            <li>Currents Research</li>
+            <li>Open Source</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-2">
+          <ul>
+            <li>
+              <h5>Support</h5>
+            </li>
+            <li>Contact support</li>
+            <li>FAQ</li>
+            <li>Network Status</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-lg-2">
-        <ul>
-          <li><h5>Community</h5></li>
-          <li>Tutotials</li>
-          <li>Meetups</li>
-          <li>Q&A</li>
-          <li>Write for Donations</li>
-          <li>Droplets for Demos</li>
-          <li>Hatch</li>
-          <li>Shop Swag</li>
-          <li>Research Program</li>
-          <li>Currents Research</li>
-          <li>Open Source</li>
-      </ul>
-    </div>
-    <div class="col-lg-2">
-      <ul>
-        <li><h5>Support</h5></li>
-        <li>Contact support</li>
-        <li>FAQ</li>
-        <li>Network Status</li>
-    </ul>
-  </div>
-      </div>
-    </div>
   </footer>
   <!-- /FOOTER -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
